@@ -14,3 +14,15 @@ Developer utilities for building Google Apps Script automation and GridBee-power
 ```javascript
 GBDev.scripts.download(scriptId);
 GBDev.scripts.exportToDrive(scriptId);
+```
+
+## Installation
+
+Add the library to your Apps Script project.
+
+## Example
+
+function test() {
+  const data = GBDev.scripts.download(ScriptApp.getScriptId());
+  Logger.log(data);
+}
